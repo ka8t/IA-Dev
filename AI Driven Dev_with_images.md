@@ -6,53 +6,7 @@
 
 ## 🎯 À qui s'adresse ce guide ?
 
-Ce guide s'adresse à **tous les acteurs du développement logiciel** qui souhaitent tirer parti de l'intelligence artificielle dans leur quotidien :
-
-### 👨‍💻 **Pour les Développeurs**
-
-Vous êtes développeur junior, senior ou architecte ? Ce guide vous permettra de :
-- ✅ **Installer et configurer** les meilleurs outils IA en 30 minutes
-- ✅ **Doubler votre productivité** sur les tâches de codage répétitives
-- ✅ **Maîtriser le prompt engineering** avec le framework RACE
-- ✅ **Appliquer l'IA** sur des cas concrets (API REST, refactoring legacy)
-
-**Gain attendu :** +35% à +80% de productivité selon les tâches
-
-### 👔 **Pour les Managers & Tech Leads**
-
-Vous pilotez une équipe de développement ? Ce guide vous aidera à :
-- ✅ **Comprendre l'impact réel** de l'IA sur votre organisation
-- ✅ **Définir une stratégie d'adoption** en 4 phases sur 6 mois
-- ✅ **Mesurer le ROI** avec des KPIs concrets (7400% de retour calculé)
-- ✅ **Gérer le changement** et accompagner votre équipe
-
-**Gain attendu :** +30% productivité équipe, -40% bugs, +20% satisfaction
-
-### 🎓 **Pour les Décideurs (CTO/Direction)**
-
-Vous prenez les décisions stratégiques ? Lisez ce guide pour :
-- ✅ Comprendre les **enjeux business** de l'IA dans le développement
-- ✅ Évaluer le **ROI et les coûts** (pilote à 5000€, retour 600%/an)
-- ✅ Identifier les **risques** (sécurité, qualité, conformité)
-- ✅ Obtenir une **vision claire** de la transformation à opérer
-
-**Temps de lecture recommandé :** 20 minutes (Introduction + Partie 2 Ch. 1-2)
-
-```mermaid
-graph LR
-    A[Ce Guide] --> B[👨‍💻 Développeurs]
-    A --> C[👔 Managers]
-    A --> D[🎓 Les Deux]
-
-    B --> B1[Partie 1 + Cas Pratiques]
-    C --> C1[Partie 2 + Introduction]
-    D --> D1[Tout le guide]
-
-    style A fill:#3498db,stroke:#2c3e50,color:#fff
-    style B fill:#27ae60,stroke:#229954,color:#fff
-    style C fill:#e67e22,stroke:#d35400,color:#fff
-    style D fill:#9b59b6,stroke:#7d3c98,color:#fff
-```
+![Diagramme 1](mermaid_diagrams/diagram_1.png)
 
 ### 📌 Guide de lecture
 
@@ -94,24 +48,7 @@ L'intelligence artificielle transforme radicalement le développement logiciel. 
 
 ### Notre approche
 
-```mermaid
-graph TD
-    A[Approche Pragmatique] --> B[🎯 Objectifs Concrets]
-    A --> C[🛠️ Outils Pratiques]
-    A --> D[📊 Résultats Mesurables]
-
-    B --> B1[Gagner en productivité]
-    B --> B2[Améliorer la qualité]
-    B --> B3[Réduire la dette technique]
-
-    C --> C1[GitHub Copilot]
-    C --> C2[ChatGPT/Claude]
-    C --> C3[Outils de revue]
-
-    D --> D1[Métriques claires]
-    D --> D2[ROI quantifiable]
-    D --> D3[Satisfaction équipe]
-```
+![Diagramme 2](mermaid_diagrams/diagram_2.png)
 
 ### Les 3 principes fondamentaux
 
@@ -135,21 +72,7 @@ Installer et configurer votre premier outil d'assistance IA en moins de 30 minut
 
 #### 📋 Checklist de départ
 
-```mermaid
-graph LR
-    A[Début] --> B{VS Code installé?}
-    B -->|Oui| D[Compte GitHub?]
-    B -->|Non| C[Installer VS Code]
-    C --> D
-    D -->|Oui| F[Installer Copilot]
-    D -->|Non| E[Créer compte GitHub]
-    E --> F
-    F --> G[Tester]
-    G --> H[✅ Prêt!]
-
-    style A fill:#3498db,stroke:#2c3e50,color:#fff
-    style H fill:#27ae60,stroke:#229954,color:#fff
-```
+![Diagramme 3](mermaid_diagrams/diagram_3.png)
 
 #### 🛠️ Installation pas à pas
 
@@ -231,44 +154,13 @@ graph LR
 
 #### 🔄 Vision globale
 
-```mermaid
-graph TD
-    A[💡 Idée] --> B[📝 Planification]
-    B --> C[🎨 Design/Architecture]
-    C --> D[⚡ Codage]
-    D --> E[🧪 Tests]
-    E --> F[📚 Documentation]
-    F --> G[🚀 Déploiement]
-    G --> H[🔍 Monitoring]
-    H --> A
-
-    B -.IA.-> B1[ChatGPT/Claude]
-    C -.IA.-> C1[Mermaid/PlantUML]
-    D -.IA.-> D1[Copilot/Cursor]
-    E -.IA.-> E1[Test Generator]
-    F -.IA.-> F1[Auto-doc]
-    G -.IA.-> G1[CI/CD Assistant]
-
-    style A fill:#e74c3c,stroke:#c0392b,color:#fff
-    style D fill:#27ae60,stroke:#229954,color:#fff
-    style G fill:#3498db,stroke:#2c3e50,color:#fff
-```
+![Diagramme 4](mermaid_diagrams/diagram_4.png)
 
 #### 1️⃣ Planification & Conception (🤖 20-30% de gain)
 
 ##### **Comment l'IA aide**
 
-```mermaid
-graph LR
-    A[Besoin Business] --> B{IA Analyse}
-    B --> C[User Stories]
-    B --> D[Architecture]
-    B --> E[Diagrammes]
-
-    C --> F[Backlog Priorisé]
-    D --> G[Choix Techniques]
-    E --> H[Docs Visuelles]
-```
+![Diagramme 5](mermaid_diagrams/diagram_5.png)
 
 ##### **Exemple concret : Planifier une API**
 
@@ -310,59 +202,13 @@ avec : User, Book, Loan, Author
 
 **Résultat attendu :**
 
-```mermaid
-classDiagram
-    class User {
-        +String id
-        +String email
-        +String name
-        +login()
-        +logout()
-    }
-
-    class Book {
-        +String isbn
-        +String title
-        +int year
-        +boolean available
-    }
-
-    class Author {
-        +String id
-        +String name
-        +String bio
-    }
-
-    class Loan {
-        +String id
-        +Date borrowDate
-        +Date returnDate
-        +return()
-    }
-
-    User "1" --> "*" Loan
-    Book "1" --> "*" Loan
-    Author "1" --> "*" Book
-```
+![Diagramme 6](mermaid_diagrams/diagram_6.png)
 
 #### 2️⃣ Codage (🤖 35-55% de gain)
 
 ##### **Les 3 modes d'utilisation de l'IA**
 
-```mermaid
-graph TD
-    A[Modes d'utilisation] --> B[🎯 Mode Complétion]
-    A --> C[💬 Mode Dialogue]
-    A --> D[🔄 Mode Refactoring]
-
-    B --> B1[Vous commencez<br/>IA complète]
-    C --> C1[Vous décrivez<br/>IA génère]
-    D --> D1[Code existant<br/>IA améliore]
-
-    B1 --> B2[Cas: Fonction simple]
-    C1 --> C2[Cas: Logique complexe]
-    D1 --> D2[Cas: Dette technique]
-```
+![Diagramme 7](mermaid_diagrams/diagram_7.png)
 
 ##### **Mode 1 : Complétion automatique**
 
@@ -580,36 +426,13 @@ def search_books(query: str, filters: Dict, limit: int = 10) -> List[Book]:
 
 #### 🎯 Qu'est-ce que le Prompt Engineering ?
 
-```mermaid
-graph LR
-    A[Prompt<br/>Vague] --> B[Résultat<br/>Médiocre]
-    C[Prompt<br/>Structuré] --> D[Résultat<br/>Excellent]
-
-    A -.Exemple.-> A1["Fais une API"]
-    C -.Exemple.-> C1["Crée une API REST FastAPI<br/>pour gérer des utilisateurs<br/>avec auth JWT et validation"]
-
-    style B fill:#e74c3c,stroke:#c0392b,color:#fff
-    style D fill:#27ae60,stroke:#229954,color:#fff
-```
+![Diagramme 8](mermaid_diagrams/diagram_8.png)
 
 **Définition :** L'art de formuler des instructions claires et précises pour obtenir les meilleurs résultats d'une IA.
 
 #### 🏗️ Anatomie d'un bon prompt
 
-```mermaid
-graph TD
-    A[Prompt Efficace] --> B[1. Contexte/Rôle]
-    A --> C[2. Tâche Précise]
-    A --> D[3. Contraintes]
-    A --> E[4. Format Attendu]
-    A --> F[5. Exemples]
-
-    B --> B1["Tu es un expert FastAPI"]
-    C --> C1["Crée un endpoint POST"]
-    D --> D1["Avec validation Pydantic"]
-    E --> E1["Code Python + tests"]
-    F --> F1["Comme dans l'exemple X"]
-```
+![Diagramme 9](mermaid_diagrams/diagram_9.png)
 
 #### 📋 Framework de Prompt : RACE
 
@@ -735,22 +558,7 @@ Format :
 
 ##### **Structure recommandée**
 
-```mermaid
-graph TD
-    A[Bibliothèque Prompts] --> B[🔧 Codage]
-    A --> C[🧪 Tests]
-    A --> D[📚 Documentation]
-    A --> E[🐛 Debug]
-    A --> F[⚡ Optimisation]
-
-    B --> B1[Création fonction]
-    B --> B2[Refactoring]
-    B --> B3[Design patterns]
-
-    C --> C1[Tests unitaires]
-    C --> C2[Tests d'intégration]
-    C --> C3[Mocks]
-```
+![Diagramme 10](mermaid_diagrams/diagram_10.png)
 
 ##### **Outil de gestion : Notion**
 
@@ -1229,49 +1037,11 @@ class ProductProcessor:
 
 #### 🌍 Vision stratégique
 
-```mermaid
-graph TD
-    A[Adoption IA] --> B[📈 Productivité]
-    A --> C[🎯 Qualité]
-    A --> D[🧠 Compétences]
-    A --> E[😊 Satisfaction]
-
-    B --> B1[+30-50% de code produit]
-    B --> B2[-50% temps sur tâches répétitives]
-
-    C --> C1[Moins de bugs]
-    C --> C2[Meilleure couverture tests]
-    C --> C3[Code plus maintenable]
-
-    D --> D1[Nouvelles compétences requises]
-    D --> D2[Prompt engineering]
-    D --> D3[Revue de code IA]
-
-    E --> E1[Moins de frustration]
-    E --> E2[Plus de créativité]
-    E --> E3[Meilleur engagement]
-
-    style A fill:#3498db,stroke:#2c3e50,color:#fff
-    style B fill:#27ae60,stroke:#229954,color:#fff
-    style C fill:#e67e22,stroke:#d35400,color:#fff
-```
+![Diagramme 11](mermaid_diagrams/diagram_11.png)
 
 #### 📊 Les 4 dimensions de transformation
 
-```mermaid
-graph LR
-    A[Manager] --> B[Équipe]
-
-    B --> C[Dimension 1:<br/>Productivité]
-    B --> D[Dimension 2:<br/>Compétences]
-    B --> E[Dimension 3:<br/>Processus]
-    B --> F[Dimension 4:<br/>Culture]
-
-    C --> C1[Mesurer]
-    D --> D1[Former]
-    E --> E1[Adapter]
-    F --> F1[Cultiver]
-```
+![Diagramme 12](mermaid_diagrams/diagram_12.png)
 
 #### 1️⃣ Impact sur la Productivité
 
@@ -1287,24 +1057,7 @@ graph LR
 
 ##### **Comment mesurer ?**
 
-```mermaid
-graph TD
-    A[Mesure Productivité] --> B[Métriques Git]
-    A --> C[Métriques JIRA]
-    A --> D[Sondages Équipe]
-
-    B --> B1[Commits/semaine]
-    B --> B2[PR merged/semaine]
-    B --> B3[Temps PR ouvert->merged]
-
-    C --> C1[Story points/sprint]
-    C --> C2[Lead time]
-    C --> C3[Cycle time]
-
-    D --> D1[Temps économisé perçu]
-    D --> D2[Satisfaction outil]
-    D --> D3[Frustrations]
-```
+![Diagramme 13](mermaid_diagrams/diagram_13.png)
 
 **Outils recommandés :**
 - **LinearB** : Analytics automatiques sur Git/JIRA
@@ -1316,30 +1069,7 @@ graph TD
 
 ##### **Le nouveau profil : Développeur Augmenté**
 
-```mermaid
-graph TD
-    A[Développeur Traditionnel] --> B[Développeur Augmenté]
-
-    A --> A1[Compétences Techniques]
-    A1 --> A2[Langages]
-    A1 --> A3[Frameworks]
-    A1 --> A4[Patterns]
-
-    B --> B1[Compétences Techniques+]
-    B --> B2[Compétences IA]
-
-    B1 --> B3[Langages]
-    B1 --> B4[Frameworks]
-    B1 --> B5[Patterns]
-
-    B2 --> B6[Prompt Engineering]
-    B2 --> B7[Revue Code IA]
-    B2 --> B8[Critique/Validation]
-    B2 --> B9[Architecture IA]
-
-    style A fill:#95a5a6,stroke:#7f8c8d,color:#fff
-    style B fill:#27ae60,stroke:#229954,color:#fff
-```
+![Diagramme 14](mermaid_diagrams/diagram_14.png)
 
 ##### **Matrice de compétences**
 
@@ -1355,23 +1085,7 @@ graph TD
 
 ##### **Processus de développement adapté**
 
-```mermaid
-sequenceDiagram
-    participant Dev
-    participant IA
-    participant Review
-    participant CI/CD
-
-    Dev->>IA: Génère code initial
-    IA->>Dev: Suggestions
-    Dev->>Dev: Valide & adapte
-    Dev->>Review: Crée PR
-    Review->>IA: Analyse automatique
-    IA->>Review: Feedback
-    Review->>Dev: Review humaine
-    Dev->>CI/CD: Merge
-    CI/CD->>CI/CD: Tests auto
-```
+![Diagramme 15](mermaid_diagrams/diagram_15.png)
 
 ##### **Adaptations nécessaires**
 
@@ -1386,26 +1100,7 @@ sequenceDiagram
 
 ##### **Mindset requis**
 
-```mermaid
-mindmap
-  root((Culture IA))
-    Apprentissage Continu
-      L'IA évolue vite
-      Formation régulière
-      Partage de pratiques
-    Collaboration Homme-IA
-      IA = Assistant
-      Humain = Décideur
-      Complémentarité
-    Qualité d'Abord
-      Ne pas sacrifier qualité
-      Valider le code IA
-      Tests obligatoires
-    Transparence
-      Partager les échecs
-      Documenter usages IA
-      Feedback ouvert
-```
+![Diagramme 16](mermaid_diagrams/diagram_16.png)
 
 ##### **Résistances courantes et solutions**
 
@@ -1460,22 +1155,7 @@ ROI = (Gain - Coût) / Coût = (7500 - 100) / 100 = 7400%
 
 #### 🎯 Framework d'adoption en 4 phases
 
-```mermaid
-graph LR
-    A[Phase 1:<br/>Exploration] --> B[Phase 2:<br/>Pilote]
-    B --> C[Phase 3:<br/>Déploiement]
-    C --> D[Phase 4:<br/>Optimisation]
-
-    A --> A1[2-4 semaines<br/>2-3 personnes]
-    B --> B1[1-2 mois<br/>1 équipe]
-    C --> C1[2-3 mois<br/>Toute l'org]
-    D --> D1[Continu<br/>Amélioration]
-
-    style A fill:#3498db,stroke:#2c3e50,color:#fff
-    style B fill:#f39c12,stroke:#e67e22,color:#fff
-    style C fill:#27ae60,stroke:#229954,color:#fff
-    style D fill:#9b59b6,stroke:#8e44ad,color:#fff
-```
+![Diagramme 17](mermaid_diagrams/diagram_17.png)
 
 #### Phase 1 : Exploration (2-4 semaines)
 
@@ -1488,28 +1168,7 @@ graph LR
 
 ##### **Actions**
 
-```mermaid
-graph TD
-    A[Exploration] --> B[Benchmarker Outils]
-    A --> C[Définir Use Cases]
-    A --> D[Calculer ROI Estimé]
-    A --> E[Identifier Champions]
-
-    B --> B1[Tester 3-4 outils]
-    B --> B2[Comparer fonctionnalités]
-    B --> B3[Évaluer coûts]
-
-    C --> C1[Cartographier tâches]
-    C --> C2[Prioriser par impact]
-    C --> C3[Définir métriques]
-
-    D --> D1[Estimer gains temps]
-    D --> D2[Calculer coûts]
-    D --> D3[Présenter business case]
-
-    E --> E1[Identifier early adopters]
-    E --> E2[Former groupe pilote]
-```
+![Diagramme 18](mermaid_diagrams/diagram_18.png)
 
 ##### **Livrable : Matrice d'évaluation des outils**
 
@@ -1531,21 +1190,7 @@ graph TD
 
 ##### **Plan de pilote**
 
-```mermaid
-gantt
-    title Plan Pilote (8 semaines)
-    dateFormat YYYY-MM-DD
-    section Préparation
-    Sélection équipe    :2024-01-01, 1w
-    Formation initiale  :2024-01-08, 1w
-    section Exécution
-    Sprint 1 - Adoption :2024-01-15, 2w
-    Sprint 2 - Mesure   :2024-01-29, 2w
-    Sprint 3 - Ajustements :2024-02-12, 2w
-    section Bilan
-    Analyse résultats   :2024-02-26, 1w
-    Rapport final       :2024-03-04, 1w
-```
+![Diagramme 19](mermaid_diagrams/diagram_19.png)
 
 ##### **Équipe pilote idéale**
 
@@ -1559,25 +1204,7 @@ gantt
 
 **Rôles dans le pilote :**
 
-```mermaid
-graph TD
-    A[Équipe Pilote] --> B[1 Manager]
-    A --> C[1 Tech Lead]
-    A --> D[2-3 Devs Senior]
-    A --> E[1-2 Devs Junior]
-
-    B --> B1[Pilotage global]
-    B --> B2[Reporting direction]
-
-    C --> C1[Référent technique]
-    C --> C2[Best practices]
-
-    D --> D1[Champions IA]
-    D --> D2[Mentors juniors]
-
-    E --> E1[Feedback utilisateurs]
-    E --> E2[Cas d'usage simples]
-```
+![Diagramme 20](mermaid_diagrams/diagram_20.png)
 
 ##### **Métriques à suivre**
 
@@ -1595,23 +1222,7 @@ graph TD
 
 ##### **Stratégie de rollout**
 
-```mermaid
-graph TD
-    A[Déploiement] --> B[Vague 1: Early Adopters]
-    B --> C[Vague 2: Équipes Produit]
-    C --> D[Vague 3: Équipes Infra]
-    D --> E[Vague 4: Tous]
-
-    B --> B1[Semaine 1-2<br/>20% effectif]
-    C --> C1[Semaine 3-6<br/>50% effectif]
-    D --> D1[Semaine 7-9<br/>80% effectif]
-    E --> E1[Semaine 10-12<br/>100% effectif]
-
-    style B fill:#3498db,stroke:#2c3e50,color:#fff
-    style C fill:#f39c12,stroke:#e67e22,color:#fff
-    style D fill:#27ae60,stroke:#229954,color:#fff
-    style E fill:#9b59b6,stroke:#8e44ad,color:#fff
-```
+![Diagramme 21](mermaid_diagrams/diagram_21.png)
 
 ##### **Plan de communication**
 
@@ -1627,18 +1238,7 @@ graph TD
 
 ##### **Boucle d'amélioration**
 
-```mermaid
-graph LR
-    A[Mesure] --> B[Analyse]
-    B --> C[Action]
-    C --> D[Validation]
-    D --> A
-
-    A --> A1[Métriques<br/>Sondages]
-    B --> B1[Identifier<br/>Opportunités]
-    C --> C1[Implémenter<br/>Changements]
-    D --> D1[Vérifier<br/>Impact]
-```
+![Diagramme 22](mermaid_diagrams/diagram_22.png)
 
 ##### **Activités mensuelles**
 
@@ -1652,25 +1252,7 @@ graph LR
 
 ##### **Dashboard Manager**
 
-```mermaid
-graph TD
-    A[KPIs IA] --> B[📈 Productivité]
-    A --> C[🎯 Qualité]
-    A --> D[😊 Adoption]
-    A --> E[💰 ROI]
-
-    B --> B1[Vélocité +40%]
-    B --> B2[Lead time -30%]
-
-    C --> C1[Bugs -25%]
-    C --> C2[Couverture tests +20%]
-
-    D --> D1[Utilisation 95%]
-    D --> D2[Satisfaction 4.5/5]
-
-    E --> E1[ROI 5000%]
-    E --> E2[Coût/valeur]
-```
+![Diagramme 23](mermaid_diagrams/diagram_23.png)
 
 ##### **Métriques détaillées**
 
@@ -1693,25 +1275,7 @@ graph TD
 
 ##### **Règles d'utilisation**
 
-```mermaid
-graph TD
-    A[Guidelines IA] --> B[✅ Autorisé]
-    A --> C[⚠️ Avec validation]
-    A --> D[❌ Interdit]
-
-    B --> B1[Génération code métier]
-    B --> B2[Tests unitaires]
-    B --> B3[Documentation]
-    B --> B4[Refactoring]
-
-    C --> C1[Code sécurité]
-    C --> C2[Requêtes DB]
-    C --> C3[APIs externes]
-
-    D --> D1[Secrets/Credentials]
-    D --> D2[Données clients]
-    D --> D3[Code propriétaire tiers]
-```
+![Diagramme 24](mermaid_diagrams/diagram_24.png)
 
 ##### **Checklist de sécurité**
 
@@ -1738,24 +1302,7 @@ graph TD
 
 #### 🎯 Le triptyque qualité
 
-```mermaid
-graph TD
-    A[Qualité du Code IA] --> B[🔍 Revue Humaine]
-    A --> C[🤖 Analyse Automatique]
-    A --> D[🧪 Tests Rigoureux]
-
-    B --> B1[Code review obligatoire]
-    B --> B2[Focus architecture]
-    B --> B3[Validation sécurité]
-
-    C --> C1[Linters]
-    C --> C2[SAST tools]
-    C --> C3[Dependency check]
-
-    D --> D1[Tests unitaires]
-    D --> D2[Tests intégration]
-    D --> D3[Tests e2e]
-```
+![Diagramme 25](mermaid_diagrams/diagram_25.png)
 
 #### 1️⃣ Processus de Revue Adapté
 
@@ -1811,28 +1358,7 @@ graph TD
 
 ##### **Stack qualité recommandée**
 
-```mermaid
-graph LR
-    A[Code] --> B[Git Push]
-    B --> C{CI/CD Pipeline}
-
-    C --> D[Linter]
-    C --> E[SAST]
-    C --> F[Dependency Scan]
-    C --> G[Tests]
-
-    D --> H{Quality Gate}
-    E --> H
-    F --> H
-    G --> H
-
-    H -->|✅ Pass| I[Merge autorisé]
-    H -->|❌ Fail| J[Bloquer merge]
-
-    style H fill:#f39c12,stroke:#e67e22,color:#fff
-    style I fill:#27ae60,stroke:#229954,color:#fff
-    style J fill:#e74c3c,stroke:#c0392b,color:#fff
-```
+![Diagramme 26](mermaid_diagrams/diagram_26.png)
 
 ##### **Configuration type**
 
@@ -1899,73 +1425,19 @@ jobs:
 
 ##### **Principes non-négociables**
 
-```mermaid
-mindmap
-  root((Qualité<br/>Code IA))
-    Jamais de confiance aveugle
-      Code IA = Code junior
-      Toujours valider
-      Toujours comprendre
-    Tests obligatoires
-      Minimum 80% coverage
-      Tests avant merge
-      CI/CD bloquant
-    Sécurité prioritaire
-      Scan automatique
-      Review manuelle
-      Zero trust
-    Documentation vivante
-      Code auto-documenté
-      README à jour
-      ADR pour décisions
-```
+![Diagramme 27](mermaid_diagrams/diagram_27.png)
 
 ##### **Rituel qualité hebdomadaire**
 
 **"Quality Hour" - 1h/semaine**
 
-```mermaid
-graph TD
-    A[Quality Hour] --> B[15min: Review métriques]
-    A --> C[20min: Partage cas intéressants]
-    A --> D[15min: Best practices]
-    A --> E[10min: Actions]
-
-    B --> B1[SonarQube dashboard]
-    B --> B2[Incidents production]
-
-    C --> C1[Bug évité grâce à review]
-    C --> C2[Code IA bien utilisé]
-
-    D --> D1[Nouveau pattern]
-    D --> D2[Outil découvert]
-
-    E --> E1[Actions correctives]
-    E --> E2[Expérimentations]
-```
+![Diagramme 28](mermaid_diagrams/diagram_28.png)
 
 #### 📊 Dashboard Qualité
 
 ##### **Métriques à suivre**
 
-```mermaid
-graph TD
-    A[Dashboard Qualité] --> B[📈 Tendances]
-    A --> C[🎯 Objectifs]
-    A --> D[🚨 Alertes]
-
-    B --> B1[Évolution bugs]
-    B --> B2[Évolution coverage]
-    B --> B3[Évolution dette technique]
-
-    C --> C1[Coverage > 80%]
-    C --> C2[0 vuln critique]
-    C --> C3[< 5 code smells/1000 lignes]
-
-    D --> D1[Régression coverage]
-    D --> D2[Nouvelle vulnérabilité]
-    D --> D3[Incident production]
-```
+![Diagramme 29](mermaid_diagrams/diagram_29.png)
 
 ##### **Tableau de bord type**
 
@@ -1994,50 +1466,13 @@ graph TD
 
 #### 🎯 La courbe du changement
 
-```mermaid
-graph TD
-    A[Annonce IA] --> B[😨 Choc]
-    B --> C[😠 Déni/Résistance]
-    C --> D[🤔 Acceptation]
-    D --> E[🧪 Expérimentation]
-    E --> F[😊 Adoption]
-    F --> G[🚀 Intégration]
-
-    B -.1-2 semaines.-> C
-    C -.2-4 semaines.-> D
-    D -.2-3 semaines.-> E
-    E -.4-8 semaines.-> F
-    F -.Continu.-> G
-
-    style B fill:#e74c3c,stroke:#c0392b,color:#fff
-    style C fill:#e67e22,stroke:#d35400,color:#fff
-    style D fill:#f39c12,stroke:#e67e22,color:#fff
-    style E fill:#f1c40f,stroke:#f39c12,color:#fff
-    style F fill:#27ae60,stroke:#229954,color:#fff
-    style G fill:#2ecc71,stroke:#27ae60,color:#fff
-```
+![Diagramme 30](mermaid_diagrams/diagram_30.png)
 
 #### 1️⃣ Anticiper les Résistances
 
 ##### **Typologie des profils**
 
-```mermaid
-graph LR
-    A[Équipe] --> B[🚀 Innovators<br/>10-15%]
-    A --> C[⚡ Early Adopters<br/>25-30%]
-    A --> D[🤔 Pragmatiques<br/>40-50%]
-    A --> E[😒 Sceptiques<br/>15-20%]
-
-    B --> B1[Enthousiasme<br/>immédiat]
-    C --> C1[Convaincus<br/>rapidement]
-    D --> D1[Attendent<br/>les preuves]
-    E --> E1[Résistants<br/>changement]
-
-    style B fill:#2ecc71,stroke:#27ae60,color:#fff
-    style C fill:#3498db,stroke:#2c3e50,color:#fff
-    style D fill:#f39c12,stroke:#e67e22,color:#fff
-    style E fill:#e74c3c,stroke:#c0392b,color:#fff
-```
+![Diagramme 31](mermaid_diagrams/diagram_31.png)
 
 ##### **Stratégies par profil**
 
@@ -2052,23 +1487,7 @@ graph LR
 
 ##### **Timeline de communication**
 
-```mermaid
-gantt
-    title Communication IA - 3 mois
-    dateFormat YYYY-MM-DD
-    section Sensibilisation
-    Annonce vision IA       :2024-01-01, 1d
-    Session Q&A             :2024-01-08, 1d
-    Partage success stories :2024-01-15, 1d
-    section Formation
-    Formation Champions     :2024-01-15, 1w
-    Formation Vague 1       :2024-01-22, 2w
-    Formation Vague 2       :2024-02-05, 2w
-    section Suivi
-    Weekly tips             :2024-01-01, 12w
-    Monthly showcases       :2024-01-29, 8w
-    Feedback surveys        :2024-01-29, 8w
-```
+![Diagramme 32](mermaid_diagrams/diagram_32.png)
 
 ##### **Messages clés par étape**
 
@@ -2108,24 +1527,7 @@ gantt
 
 ##### **Parcours de formation**
 
-```mermaid
-graph TD
-    A[Parcours Formation IA] --> B[Niveau 1: Débutant]
-    A --> C[Niveau 2: Intermédiaire]
-    A --> D[Niveau 3: Avancé]
-
-    B --> B1[1h: Installation & Setup]
-    B --> B2[2h: Premiers pas]
-    B --> B3[1h: Bonnes pratiques]
-
-    C --> C1[2h: Prompt Engineering]
-    C --> C2[2h: Revue de code IA]
-    C --> C3[1h: Sécurité]
-
-    D --> D1[3h: Architecture avec IA]
-    D --> D2[2h: Optimisation prompts]
-    D --> D3[2h: IA dans CI/CD]
-```
+![Diagramme 33](mermaid_diagrams/diagram_33.png)
 
 ##### **Niveau 1 : Débutant (4h)**
 
@@ -2169,25 +1571,7 @@ graph TD
 
 ##### **Format d'apprentissage**
 
-```mermaid
-graph LR
-    A[Apprentissage] --> B[📺 E-learning]
-    A --> C[👥 Ateliers]
-    A --> D[🤝 Pair Programming]
-    A --> E[📚 Documentation]
-
-    B --> B1[Vidéos 5-10min]
-    B --> B2[Quiz interactifs]
-
-    C --> C1[Sessions live 2h]
-    C --> C2[Exercices pratiques]
-
-    D --> D1[Champion + Débutant]
-    D --> D2[Projet réel]
-
-    E --> E1[Guide de référence]
-    E --> E2[Bibliothèque prompts]
-```
+![Diagramme 34](mermaid_diagrams/diagram_34.png)
 
 #### 4️⃣ Reconnaissance et Célébration
 
@@ -2213,42 +1597,13 @@ graph LR
 
 ##### **Gamification**
 
-```mermaid
-graph TD
-    A[Système de Badges] --> B[🌱 Débutant]
-    A --> C[⭐ Pratiquant]
-    A --> D[🏆 Expert]
-    A --> E[🚀 Champion]
-
-    B --> B1[Première utilisation]
-    B --> B2[10 suggestions acceptées]
-
-    C --> C1[100 suggestions acceptées]
-    C --> C2[Formation Niveau 2]
-
-    D --> D1[500 suggestions acceptées]
-    D --> D2[3 best practices partagées]
-
-    E --> E1[Mentor de 3+ personnes]
-    E --> E2[Formation Niveau 3]
-```
+![Diagramme 35](mermaid_diagrams/diagram_35.png)
 
 #### 5️⃣ Feedback Loops
 
 ##### **Mécanismes de feedback**
 
-```mermaid
-graph LR
-    A[Feedback] --> B[📊 Quantitatif]
-    A --> C[💬 Qualitatif]
-
-    B --> B1[Sondage mensuel<br/>5 questions]
-    B --> B2[Métriques usage<br/>automatiques]
-
-    C --> C1[Office hours<br/>hebdomadaires]
-    C --> C2[Retros sprint<br/>slot IA]
-    C --> C3[1-on-1<br/>Manager]
-```
+![Diagramme 36](mermaid_diagrams/diagram_36.png)
 
 ##### **Sondage mensuel type**
 
@@ -2299,29 +1654,7 @@ graph LR
 
 ### L'IA : Un Partenaire, Pas un Remplaçant
 
-```mermaid
-graph LR
-    A[IA] --> B[Automatise]
-    A --> C[Assiste]
-    A --> D[Accélère]
-
-    B --> B1[Tâches répétitives]
-    C --> C1[Décisions complexes]
-    D --> D1[Apprentissage]
-
-    E[Humain] --> F[Conçoit]
-    E --> G[Décide]
-    E --> H[Crée]
-
-    F --> F1[Architecture]
-    G --> G1[Business logic]
-    H --> H1[Innovation]
-
-    A -.Complémentarité.-> E
-
-    style A fill:#3498db,stroke:#2c3e50,color:#fff
-    style E fill:#27ae60,stroke:#229954,color:#fff
-```
+![Diagramme 37](mermaid_diagrams/diagram_37.png)
 
 ### Les 10 Commandements du Développement Augmenté par IA
 
@@ -2483,22 +1816,7 @@ L'opportunité est là. Saisissez-la. 🚀
 
 **Timeline réaliste :**
 
-```mermaid
-gantt
-    title Courbe d'Apprentissage IA
-    dateFormat YYYY-MM-DD
-    section Novice
-    Installation et setup      :2024-01-01, 1d
-    Premiers tests            :2024-01-02, 3d
-    section Compétent
-    Utilisation quotidienne   :2024-01-05, 2w
-    Premiers prompts structurés :2024-01-12, 2w
-    section Maîtrise
-    Bibliothèque de prompts   :2024-01-26, 4w
-    Techniques avancées       :2024-02-23, 8w
-    section Expert
-    Mentor pour l'équipe      :2024-04-19, 12w
-```
+![Diagramme 38](mermaid_diagrams/diagram_38.png)
 
 **Durée pour être productif :**
 - ⚡ **Basique** : 1 jour (complétion simple)
@@ -2570,17 +1888,7 @@ gantt
 
 #### **Inspiration Principale**
 
-Ce guide est basé sur les enseignements de **[Alex Soyes (Alex so yes)](https://www.youtube.com/@alexsoyes)** :
-
-**🎥 Ressources Alex so yes :**
-- **Chaîne YouTube** : [youtube.com/@alexsoyes](https://www.youtube.com/@alexsoyes) - Tutoriels, démos, retours d'expérience
-- **Blog technique** : [alexsoyes.com](https://alexsoyes.com/) - Articles approfondis sur l'IA et le dev
-- **Twitter/X** : [@alexsoyes](https://twitter.com/alexsoyes) - Veille quotidienne
-- **LinkedIn** : [Alex so yes](https://www.linkedin.com/company/alexsoyes) - Contenu professionnel
-- **Formation "Coder avec l'IA"** - Programme complet pour développeurs
-- **Newsletter** - Tous les lundis à 10h : "1 action par semaine pour coder 2x plus vite"
-
-> 📌 **Pourquoi Alex Soyes ?** Développeur avec 10+ ans d'expérience, Alex a été l'un des pionniers français à documenter l'usage pragmatique de l'IA dans le développement. Son approche "no bullshit" et orientée résultats a inspiré des milliers de développeurs.
+**[Alex so yes](https://www.youtube.com/@alexsoyes)** - Chaîne YouTube de référence pour le développement pragmatique avec IA. Approche directe, sans bullshit, orientée résultats.
 
 #### **Études & Recherches**
 
@@ -2610,33 +1918,7 @@ Ce guide est basé sur les enseignements de **[Alex Soyes (Alex so yes)](https:/
 
 **Version du guide :** 2.0
 **Dernière mise à jour :** Janvier 2025
-
-### 👤 Auteur
-
-**Karim** - Tech Lead & AI Advocate
-- 📧 Email : karim.it.project@gmail.com
-- 💡 Guide créé dans le cadre de la démocratisation de l'IA dans le développement
-
-### 🙏 Crédits & Inspiration
-
-Ce guide est **fortement inspiré** du travail de **Alex Soyes** ([@alexsoyes](https://twitter.com/alexsoyes)) :
-
-**🎥 Chaîne YouTube :** [Alex so yes](https://www.youtube.com/@alexsoyes)
-- Contenu de référence sur le développement pragmatique avec IA
-- Approche directe, sans bullshit, orientée résultats
-
-**🌐 Site web :** [alexsoyes.com](https://alexsoyes.com/)
-- Blog technique avec articles détaillés
-- Formation "Coder avec l'IA"
-- Newsletter hebdomadaire pour développeurs
-
-**🐦 Twitter/X :** [@alexsoyes](https://twitter.com/alexsoyes)
-- Veille active sur l'IA et le développement
-
-**💼 LinkedIn :** [Alex so yes](https://www.linkedin.com/company/alexsoyes)
-
-> *Alex Soyes est développeur web avec plus de 10 ans d'expérience. Il a créé la première communauté française sur l'IA pour les développeurs et partage régulièrement ses découvertes et bonnes pratiques.*
-
+**Auteur :** Inspiré par Alex so yes
 **Licence :** CC BY-SA 4.0
 
 ---
