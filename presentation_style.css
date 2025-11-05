@@ -1,0 +1,55 @@
+/* General Style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #005a9e;
+}
+
+h1 {
+    border-bottom: 2px solid #005a9e;
+    padding-bottom: 10px;
+}
+
+/* Slide Style */
+.slide {
+    padding: 40px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Code Style */
+pre {
+    background-color: #2d2d2d;
+    color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Link Style */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* List Style */
+ul {
+    list-style-type: '✓ ';
+}
