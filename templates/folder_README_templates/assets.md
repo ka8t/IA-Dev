@@ -1,0 +1,3 @@
+# 🖼️ Assets — Ressources visuelles
+
+Contient les fichiers visuels et templates HTML/PDF...

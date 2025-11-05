@@ -1,0 +1,3 @@
+# ⚙️ Scripts — Automatisation et génération
+
+Contient les scripts d'automatisation...
