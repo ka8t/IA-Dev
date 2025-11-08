@@ -1,0 +1,34 @@
+sequenceDiagram
+    participant Dev as 👨‍💻 Développeur
+    participant IDE as 💻 IDE + Copilot
+    participant IA as 🤖 ChatGPT/Claude
+    participant Git as 🔀 Git/GitHub
+    participant CI as ⚙️ CI/CD
+
+    Dev->>IA: 1. Analyser ticket/feature
+    IA-->>Dev: Proposer 3 approches
+
+    Dev->>IA: 2. Choisir approche + demander code
+    IA-->>Dev: Générer code de base
+
+    Dev->>IDE: 3. Copier code + adapter
+    IDE->>Dev: Complétion temps réel (Copilot)
+
+    Dev->>IA: 4. Générer tests unitaires
+    IA-->>Dev: Suite de tests complète
+
+    Dev->>IDE: 5. Exécuter tests
+    IDE-->>Dev: Tests passent ✅
+
+    Dev->>IA: 6. Demander revue de code
+    IA-->>Dev: Suggestions d'amélioration
+
+    Dev->>IDE: 7. Appliquer corrections
+    Dev->>Git: 8. Commit + Push
+
+    Git->>CI: 9. Trigger pipeline
+    CI->>IA: 10. AI Code Review
+    IA-->>CI: Rapport de revue
+    CI->>Git: 11. Commenter PR
+
+    Git-->>Dev: 12. Feedback + merge

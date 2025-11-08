@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log
+.env
+.DS_Store
+*.log
+
+# Security sensitive files
+.env.local
+.env.production
+credentials.json
+secrets/
+
+# Database
+*.db
+*.sqlite

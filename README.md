@@ -1,6 +1,14 @@
-# 🤖 AI Driven Dev — Intégrer l’IA dans le Développement Logiciel
+# 🤖 AI Driven Dev — Intégrer l'IA dans le Développement Logiciel
 
-Bienvenue dans **AI Driven Dev**, un projet open-source qui aide **développeurs** et **managers tech** à adopter l’IA de manière pragmatique, mesurable et sécurisée.
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](CHANGELOG.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/your-repo/graphs/commit-activity)
+[![Documentation](https://img.shields.io/badge/docs-complete-success.svg)](./guides/AI_Driven_Dev_Guide.md)
+[![GitHub issues](https://img.shields.io/github/issues/your-username/IA-Dev.svg)](https://github.com/your-username/IA-Dev/issues)
+[![GitHub stars](https://img.shields.io/github/stars/your-username/IA-Dev.svg?style=social&label=Star)](https://github.com/your-username/IA-Dev)
+
+Bienvenue dans **AI Driven Dev**, un projet open-source qui aide **développeurs** et **managers tech** à adopter l'IA de manière pragmatique, mesurable et sécurisée.
 
 L’objectif : transformer les équipes de développement en **équipes augmentées** grâce à des outils, des méthodes et des retours terrain concrets.
 
@@ -19,11 +27,15 @@ L’objectif : transformer les équipes de développement en **équipes augment�
 
 | Public | Ressources clés |
 |---------|----------------|
-| 👨‍💻 **Développeurs** | [Quick Start Dev](./guides/Quick_Start_Dev.md) – Devenez un “développeur augmenté” |
+| 👨‍💻 **Développeurs** | [Quick Start Dev](./guides/Quick_Start_Dev.md) – Devenez un "développeur augmenté" en 30 min |
 | 👔 **Managers / Leads** | [Quick Start Manager](./guides/Quick_Start_Manager.md) – Pilotez la transformation IA |
-| 📚 **Guide complet** | [AI Driven Dev Guide](./guides/AI_Driven_Dev_Guide.md) – Vision globale et cas pratiques |
-| 🧠 **Prompts & outils** | [Prompts Library](./resources/prompts_library.md) – Framework RACE et exemples |
-| 📊 **Suivi de performance** | [Metrics Templates](./resources/metrics_templates.md) – KPIs, qualité et ROI |
+| 📚 **Guide complet** | [AI Driven Dev Guide](./guides/AI_Driven_Dev_Guide.md) – Vision globale (12 000 mots) |
+| 🧠 **Prompts & outils** | [Prompts Library](./resources/prompts_library.md) – 28+ prompts RACE prêts à l'emploi |
+| 📊 **Suivi de performance** | [Metrics & Dashboards](./resources/metrics_templates.md) – KPIs, ROI et dashboards |
+| 💼 **Rapports exécutifs** | [Templates Managers](./resources/templates/) – Rapports ROI et présentations |
+| 🎥 **Vidéos & Démos** | [Guide Vidéos](./resources/video_demos/) – Créer des démos professionnelles |
+| 🌍 **Communauté** | [Rejoindre](./COMMUNITY.md) – Discord, événements, Champions IA |
+| ❓ **FAQ** | [30 Questions/Réponses](./FAQ.md) – Toutes vos questions |
 
 ---
 
@@ -53,13 +65,41 @@ Ces résultats proviennent de projets pilotes menés avec des équipes ayant int
 ## 🧩 Structure du dépôt
 
 ```bash
-guides/       → Guides complets et quick-starts
-resources/    → Prompts, outils, KPIs, listes de lecture
-examples/     → Cas pratiques et prototypes IA
-assets/       → Visuels, PDF et templates HTML/CSS
-scripts/      → Génération de docs et automatisations
-archives/     → Anciennes versions et sauvegardes
-.github/      → Templates d’issues et de PR pour contribuer
+IA-Dev/
+├── guides/                      # 📚 Guides complets (Quick Starts, Guide principal)
+├── resources/                   # 🧠 Ressources pratiques
+│   ├── prompts_library.md      # 28+ prompts RACE
+│   ├── metrics_templates.md    # KPIs et ROI
+│   ├── tools_setup.md          # Installation outils IA
+│   ├── templates/              # Templates rapports exécutifs
+│   │   ├── executive_report_template.md
+│   │   ├── executive_presentation_outline.md
+│   │   └── dashboards/         # Grafana, monitoring
+│   └── video_demos/            # Guide création vidéos
+├── examples/                    # 💻 5 exemples complets avec code
+│   ├── 01_code_generation/     # Email validator + tests
+│   ├── 02_test_automation/     # Payment service + 26 tests
+│   ├── 03_documentation/       # Auth API + OpenAPI
+│   ├── 04_ci_cd_integration/   # GitHub Actions + IA
+│   └── 05_security_review/     # Audit OWASP Top 10
+├── assets/                      # 🎨 Diagrammes et visuels
+│   └── diagrams/               # 14 diagrammes Mermaid
+├── scripts/                     # 🔧 Scripts d'automatisation
+│   ├── generate_docs.py        # Génération TOC
+│   ├── export_mermaid.sh       # Export diagrammes
+│   ├── ai_code_review.py       # Code review IA
+│   └── generate_docs_ai.js     # Docs API auto
+├── translations/                # 🌍 Traductions (EN, ES, DE...)
+├── .github/                     # ⚙️ CI/CD et templates
+│   ├── workflows/              # 4 workflows GitHub Actions
+│   ├── ISSUE_TEMPLATE/         # Bug report, Feature request
+│   └── PULL_REQUEST_TEMPLATE.md
+├── README.md                    # 📖 Ce fichier
+├── CONTRIBUTING.md              # 🤝 Guide de contribution
+├── CHANGELOG.md                 # 📝 Historique des versions
+├── COMMUNITY.md                 # 👥 Guide communauté
+├── FAQ.md                       # ❓ 30 Questions/Réponses
+└── LICENSE                      # 📄 Licence MIT
 ```
 
 ### 🧠 Raison de cette architecture
@@ -108,11 +148,19 @@ Utilisez [metrics_templates.md](./resources/metrics_templates.md) pour suivre :
 
 ---
 
-## 🌍 Rejoindre la discussion
+## 🌍 Rejoindre la Communauté
 
-💬 Partagez vos retours, ouvrez des issues ou proposez vos cas pratiques.  
-📩 Suivez les annonces sur [LinkedIn](https://www.linkedin.com/in/ton-profil)  
-💡 Retrouvez les templates et scripts à jour sur [GitHub](https://github.com/ka8t/IA-Dev)
+💬 **[Discord](https://discord.gg/your-invite)** – Chat en temps réel, entraide quotidienne
+📢 **[GitHub Discussions](https://github.com/your-repo/discussions)** – Questions, idées, annonces
+🐦 **[Twitter @AIDriverDev](https://twitter.com/aidrivendev)** – News et updates
+👥 **[Programme Champions](./COMMUNITY.md#programme-de-champions)** – Devenez ambassadeur
+
+**Événements :**
+- 🗓️ Weekly AI Dev Meetup (Mardi 18h CET)
+- 🎤 Monthly Show & Tell (1er vendredi du mois)
+- 🏆 Quarterly Challenge (Chaque trimestre)
+
+📚 Consultez le [Guide Communauté](./COMMUNITY.md) pour plus d'infos
 
 ---
 

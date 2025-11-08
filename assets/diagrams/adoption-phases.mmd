@@ -1,0 +1,48 @@
+graph TD
+    Start([Début]) --> Phase1[Phase 1: Exploration<br/>2-4 semaines]
+
+    Phase1 --> A1[Sensibiliser l'équipe]
+    Phase1 --> A2[Identifier volontaires]
+    Phase1 --> A3[Choisir les outils]
+    Phase1 --> A4[Définir périmètre pilote]
+
+    A1 & A2 & A3 & A4 --> Decision1{Go Pilote?}
+
+    Decision1 -->|Non| Stop1([Arrêt])
+    Decision1 -->|Oui| Phase2[Phase 2: Pilote<br/>3-4 semaines]
+
+    Phase2 --> B1[Acheter licences 2-3 devs]
+    Phase2 --> B2[Formation initiale 2h]
+    Phase2 --> B3[Projet pilote]
+    Phase2 --> B4[Mesurer KPIs]
+
+    B1 & B2 & B3 & B4 --> Decision2{ROI > 200%?}
+
+    Decision2 -->|Non| Stop2([Prolonger<br/>ou Arrêt])
+    Decision2 -->|Oui| Phase3[Phase 3: Déploiement<br/>1-3 mois]
+
+    Phase3 --> C1[Licences toute équipe]
+    Phase3 --> C2[Former 100% équipe]
+    Phase3 --> C3[Créer charte IA]
+    Phase3 --> C4[Support interne]
+
+    C1 & C2 & C3 & C4 --> Decision3{Adoption > 80%?}
+
+    Decision3 -->|Non| Adjust[Ajustements]
+    Adjust --> Phase3
+    Decision3 -->|Oui| Phase4[Phase 4: Optimisation<br/>Continu]
+
+    Phase4 --> D1[Partage best practices]
+    Phase4 --> D2[Intégration CI/CD]
+    Phase4 --> D3[Automatisation]
+    Phase4 --> D4[Amélioration continue]
+
+    D1 & D2 & D3 & D4 --> Success([Équipe Augmentée<br/>ROI > 500%])
+
+    style Phase1 fill:#e1f5ff
+    style Phase2 fill:#fff3cd
+    style Phase3 fill:#d4edda
+    style Phase4 fill:#f8d7da
+    style Success fill:#28a745,color:#fff
+    style Stop1 fill:#dc3545,color:#fff
+    style Stop2 fill:#dc3545,color:#fff

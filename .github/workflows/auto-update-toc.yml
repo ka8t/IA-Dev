@@ -1,0 +1,82 @@
+name: Auto-update Table of Contents
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'guides/**/*.md'
+      - 'resources/**/*.md'
+
+  workflow_dispatch:
+
+jobs:
+  update-toc:
+    name: Generate and commit TOC
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install markdown-toc
+
+      - name: Generate TOC for guides
+        run: |
+          echo "📝 Generating TOC for guides..."
+          for file in guides/*.md; do
+            if [ -f "$file" ]; then
+              echo "Processing: $file"
+              # You can use markdown-toc or your custom script
+              python scripts/generate_docs.py "$file"
+            fi
+          done
+
+      - name: Generate TOC for resources
+        run: |
+          echo "📝 Generating TOC for resources..."
+          for file in resources/*.md; do
+            if [ -f "$file" ]; then
+              echo "Processing: $file"
+              python scripts/generate_docs.py "$file"
+            fi
+          done
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No TOC changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "TOC changes detected"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add guides/ resources/
+          git commit -m "docs: auto-update table of contents [skip ci]"
+          git push
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.check-changes.outputs.changed }}" == "true" ]; then
+            echo "✅ TOC updated and committed"
+          else
+            echo "ℹ️  No TOC updates needed"
+          fi

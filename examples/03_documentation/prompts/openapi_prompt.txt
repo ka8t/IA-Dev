@@ -1,0 +1,16 @@
+Role : Tu es un expert en documentation d'API REST avec OpenAPI 3.0.
+
+Action : Génère une spécification OpenAPI 3.0 complète pour cette API.
+
+Context :
+- Code : [server.js code]
+- Format : YAML (OpenAPI 3.0)
+- Public : développeurs utilisant Swagger UI
+
+Expectations :
+- Spécification complète avec tous les endpoints
+- Schémas de données (User, Error, etc.)
+- Exemples de requêtes/réponses
+- Codes d'erreur documentés
+- Security schemes (Bearer JWT)
+- Format OpenAPI 3.0 valide

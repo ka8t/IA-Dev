@@ -1,0 +1,94 @@
+name: Welcome New Contributors
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  welcome:
+    name: Welcome message
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome first-time contributor
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const isFirstIssue = context.payload.action === 'opened' && context.payload.issue;
+            const isFirstPR = context.payload.action === 'opened' && context.payload.pull_request;
+
+            let message = '';
+
+            if (isFirstIssue) {
+              // Check if this is the user's first issue
+              const issues = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                creator: context.payload.sender.login,
+                state: 'all'
+              });
+
+              if (issues.data.length === 1) {
+                message = `👋 Bonjour @${context.payload.sender.login} !
+
+Merci d'avoir ouvert votre première issue sur **AI Driven Dev** ! 🎉
+
+Quelqu'un de l'équipe va la regarder prochainement. En attendant :
+
+- 📖 Consultez notre [Guide de contribution](../CONTRIBUTING.md)
+- 💬 N'hésitez pas à poser des questions
+- 🔔 Vous recevrez des notifications sur les mises à jour
+
+Merci de contribuer à améliorer le projet ! 🙏`;
+
+                await github.rest.issues.createComment({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  body: message
+                });
+              }
+            }
+
+            if (isFirstPR) {
+              // Check if this is the user's first PR
+              const prs = await github.rest.pulls.list({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'all',
+                creator: context.payload.sender.login
+              });
+
+              if (prs.data.length === 1) {
+                message = `🎉 Félicitations @${context.payload.sender.login} !
+
+Merci d'avoir ouvert votre **première Pull Request** sur **AI Driven Dev** ! 🚀
+
+**Prochaines étapes :**
+
+1. ✅ Les checks automatiques vont s'exécuter
+2. 👀 Un reviewer va examiner votre code
+3. 💬 N'hésitez pas à répondre aux commentaires
+4. 🔄 Vous pouvez pousser de nouveaux commits si besoin
+
+**Ressources utiles :**
+- 📖 [Guide de contribution](../CONTRIBUTING.md)
+- ✅ [Checklist PR](../.github/PULL_REQUEST_TEMPLATE.md)
+- 💡 [Standards de qualité](../CONTRIBUTING.md#standards-de-qualité)
+
+Merci de contribuer à rendre l'IA plus accessible aux développeurs ! 🙏
+
+---
+
+*PS : Si vous trouvez ce projet utile, n'oubliez pas de lui donner une ⭐ !*`;
+
+                await github.rest.issues.createComment({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  body: message
+                });
+              }
+            }

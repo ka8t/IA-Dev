@@ -1,0 +1,21 @@
+node_modules/
+npm-debug.log
+.env
+.DS_Store
+*.log
+
+# Build outputs
+dist/
+build/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# AI generated files
+ai-review.md
+docs/API.md

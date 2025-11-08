@@ -1,0 +1,45 @@
+graph TB
+    subgraph "Déclencheur"
+        A1[Push/PR] --> A2{Branche?}
+        A2 -->|PR| B[Pipeline PR]
+        A2 -->|Main| C[Pipeline Deploy]
+    end
+
+    subgraph "Pipeline PR"
+        B --> B1[Lint & Format]
+        B --> B2[Tests Backend]
+        B --> B3[Tests Frontend]
+        B --> B4[Build]
+
+        B1 & B2 & B3 & B4 --> B5[Tests E2E]
+        B5 --> B6[🤖 AI Code Review]
+
+        B6 --> B7{Qualité OK?}
+        B7 -->|Non| B8[❌ Bloquer PR]
+        B7 -->|Oui| B9[✅ Approuver PR]
+    end
+
+    subgraph "Pipeline Deploy"
+        C --> C1[Tests de sécurité]
+        C1 --> C2{Tests OK?}
+
+        C2 -->|Non| C3[❌ Arrêter]
+        C2 -->|Oui| C4[🤖 Générer docs IA]
+
+        C4 --> C5[Commit docs]
+        C5 --> C6[Deploy Frontend Vercel]
+        C5 --> C7[Deploy Backend Railway]
+
+        C6 & C7 --> C8[Tests smoke]
+        C8 --> C9{Deploy OK?}
+
+        C9 -->|Non| C10[🔄 Rollback]
+        C9 -->|Oui| C11[📢 Notif Slack]
+        C11 --> C12[✅ Success]
+    end
+
+    style B9 fill:#28a745,color:#fff
+    style B8 fill:#dc3545,color:#fff
+    style C3 fill:#dc3545,color:#fff
+    style C10 fill:#ffc107
+    style C12 fill:#28a745,color:#fff

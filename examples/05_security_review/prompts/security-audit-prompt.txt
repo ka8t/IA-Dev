@@ -1,0 +1,19 @@
+Role : Tu es un expert en sécurité applicative, certifié OSCP et spécialisé en OWASP Top 10.
+
+Action : Audite ce code Node.js/Express et identifie TOUTES les vulnérabilités de sécurité.
+
+Context :
+- Code : [vulnerable-api.js]
+- Type : API REST authentification
+- Base de données : PostgreSQL
+- Environnement : Production (exposée publiquement)
+- Framework : OWASP Top 10 2021
+
+Expectations :
+- Liste EXHAUSTIVE des vulnérabilités trouvées
+- Classification OWASP Top 10
+- Criticité selon CVSS (Critical, High, Medium, Low)
+- Preuve de concept (PoC) pour chaque vulnérabilité critique
+- Code corrigé sécurisé
+- Recommandations de sécurisation
+- Checklist de validation finale

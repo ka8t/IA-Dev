@@ -1,0 +1,24 @@
+Role : Tu es un développeur Python senior expert en validation de données.
+
+Action : Crée une classe EmailValidator complète qui :
+- Valide le format email selon RFC 5322
+- Détecte les domaines jetables (liste hardcodée : tempmail.com, guerrillamail.com, 10minutemail.com, throwaway.email, mailinator.com, trashmail.com)
+- Vérifie l'existence d'enregistrements MX DNS (avec gestion timeout)
+- Lève des exceptions custom pour chaque type d'erreur
+- Est thread-safe
+
+Context :
+- Python 3.11
+- Utiliser la bibliothèque standard (re, dns.resolver)
+- API REST FastAPI (validation de payload)
+- Production : 1000 validations/minute
+
+Expectations :
+- Classe EmailValidator avec méthode validate(email: str) -> bool
+- Exceptions custom : InvalidEmailFormatError, DisposableEmailError, InvalidDomainError
+- Type hints complets
+- Docstrings Google style
+- Tests unitaires pytest (au moins 10 cas)
+- Tests pour cas limites (emails unicode, très longs, etc.)
+- Mock des requêtes DNS dans les tests
+- Couverture de tests > 90%

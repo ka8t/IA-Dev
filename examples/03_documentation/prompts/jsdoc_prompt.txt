@@ -1,0 +1,14 @@
+Role : Expert en documentation JavaScript avec JSDoc.
+
+Action : Ajoute des commentaires JSDoc complets à ce code.
+
+Context :
+- Code : [server.js code]
+- Standard : JSDoc 3
+- IDE : VS Code (IntelliSense)
+
+Expectations :
+- Commentaires JSDoc pour chaque fonction
+- Types définis (@param, @returns)
+- Exemples d'utilisation (@example)
+- Liens entre fonctions (@see)
